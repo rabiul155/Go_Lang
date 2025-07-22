@@ -56,6 +56,23 @@ func addFunc (num1 int, num2 int){
 	fmt.Println(sum)
 }
 
+func returnFunc (num1 int, num2 int) int {
+	sum := num1 + num2
+	return sum
+}
+
+func multipleReturnFunc (num1 int, num2 int) (int, int){
+	sum := num1 + num2
+	mul := num1 * num2
+	return sum, mul
+}
+
+func sayHello (name  string){
+
+
+	fmt.Println("say hello to", name)
+}
+
 func main(){
 	helloWorld()
 	ifelse()
@@ -63,5 +80,10 @@ func main(){
 	a:=10
 	b:=20
 	addFunc(a,b)
+	sum := returnFunc(a,b)
+	fmt.Println(sum)
+	sum2 , mul := multipleReturnFunc(a,b)
+	fmt.Println(sum2, mul)
+	sayHello("siyam")
 
 }
