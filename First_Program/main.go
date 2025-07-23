@@ -73,17 +73,29 @@ func sayHello (name  string){
 	fmt.Println("say hello to", name)
 }
 
+func takeUserInput (){
+	fmt.Println("Enter your name here")
+	var name string
+	fmt.Scanln(&name)
+	fmt.Println("Your name is",name)
+
+
+}
+
 func main(){
-	helloWorld()
-	ifelse()
-	switchCase()
-	a:=10
-	b:=20
-	addFunc(a,b)
-	sum := returnFunc(a,b)
-	fmt.Println(sum)
-	sum2 , mul := multipleReturnFunc(a,b)
-	fmt.Println(sum2, mul)
-	sayHello("siyam")
+	// helloWorld()
+	// ifelse()
+	// switchCase()
+	// a:=10
+	// b:=20
+	// addFunc(a,b)
+	// sum := returnFunc(a,b)
+	// fmt.Println(sum)
+	// sum2 , mul := multipleReturnFunc(a,b)
+	// fmt.Println(sum2, mul)
+	// sayHello("siyam")
+	takeUserInput()
+
+
 
 }
