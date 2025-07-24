@@ -6,8 +6,9 @@ import "fmt"
 var x int = 100
 
 //standard function. named function which has name
-func add (a int , b int){
+func add (a int , b int){ // here a and b are called parameter
 	sum := a+b
+	fmt.Println("This is normal function")
 	fmt.Println(sum)
 }
 
@@ -24,16 +25,32 @@ func init(){
 
 
 func main (){
-	fmt.Println("Function types")
-	add(10, 15) 
+
 	// Main function print 500 because global variable x reassign from init function
-	fmt.Println("print global variable", x)
+	fmt.Println("print global variable change after init fn", x)
+
+	// Normal function
+	add(10, 15) // here 10 and 20 called parameter 
+	
 
 	//Anonymous function
 	func (a, b int)  {
 		sum := a+b
+			fmt.Println("This is anonymous function")
 		fmt.Println(sum)
 	}(5,6) // This called Immediately Invoked Function Expression (IIFE)
+
+
+	// anonymous function assign in a variable like arrow function in js
+	add := func (a int , b int)  {
+		sum := a+b
+		fmt.Println("This is anonymous function assign in a variable")
+		fmt.Println(sum)
+	}
+	add(200, 300)
+
+
+	higherOrderFunction()
 
 }
 
