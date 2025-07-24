@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"mathlib/mathlib"
+)
 
 //global scope
 var a int = 10
@@ -32,6 +35,11 @@ func main (){
 	// add(m,n) // does not work m and n does not exist in local or global variable
 	variableStore()
 
-	sumVar(p,q)
+	// sumVar(p,q) // get the function from same directory but another file 
+
+
+
+	fmt.Println("Showing mathlib sum")
+	mathlib.Math(p,q)
 
 }
