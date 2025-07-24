@@ -48,9 +48,8 @@ func main (){
 		fmt.Println(sum)
 	}
 	add(200, 300)
-
-
-	higherOrderFunction()
+	// higherOrderFunction()
+	structInGo()
 
 }
 
